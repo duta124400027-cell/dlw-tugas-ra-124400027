@@ -23,7 +23,7 @@ cd laporan-latex && latexmk -pdf main.tex
 
 Di Google Colab: pilih runtime GPU (T4), unggah folder ini, jalankan `!pip install torch pandas matplotlib` bila perlu, lalu Run All. Run yang terputus dilewati otomatis saat dijalankan ulang.
 
-Perangkat yang dipakai: [ISI: mis. Google Colab T4], total waktu training ≈ 20 menit (lihat `hasil/ringkasan.txt`).
+Perangkat yang dipakai: Google Colab (GPU NVIDIA T4), total waktu training ≈ 20 menit (lihat `hasil/ringkasan.txt`).
 
 ## Ringkasan Hasil
 
