@@ -1,0 +1,22 @@
+\begin{table}[t]
+\centering
+\scriptsize
+\caption{Ablasi B1: \textit{batch size}.}
+\label{tab:B1}
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{@{}llcccc@{}}
+\toprule
+batch & MAE & ANN & RNN & LSTM & GRU \\
+\midrule
+\multirow{2}{*}{16} & val & 245$\pm$17 & 202$\pm$9 & 209$\pm$19 & \textbf{202$\pm$4} \\
+ & test & 308$\pm$18 & \textbf{228$\pm$7} & 249$\pm$35 & 232$\pm$10 \\
+\addlinespace[1pt]
+\multirow{2}{*}{64} & val & 249$\pm$9 & \textbf{206$\pm$7} & 230$\pm$12 & 208$\pm$4 \\
+ & test & 310$\pm$6 & \textbf{230$\pm$5} & 274$\pm$25 & 237$\pm$9 \\
+\addlinespace[1pt]
+\multirow{2}{*}{256} & val & 254$\pm$13 & \textbf{228$\pm$17} & 270$\pm$11 & 234$\pm$16 \\
+ & test & 319$\pm$29 & \textbf{259$\pm$32} & 309$\pm$4 & 264$\pm$4 \\
+\addlinespace[1pt]
+\bottomrule
+\end{tabular}
+\end{table}

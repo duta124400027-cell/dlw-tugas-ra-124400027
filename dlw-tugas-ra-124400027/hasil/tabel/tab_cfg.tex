@@ -1,0 +1,16 @@
+\begin{table}[t]
+\centering
+\scriptsize
+\caption{Konfigurasi terbaik per model (Bagian C).}
+\label{tab:cfg}
+\begin{tabular}{@{}lp{6.6cm}@{}}
+\toprule
+Model & Konfigurasi \\
+\midrule
+ANN & $W{=}6$, hidden 128, 1 lapisan, \textit{lr} 0.001, fitur \texttt{net+waktu}, batch 16, dropout 0 \\
+RNN & $W{=}48$, hidden 64, 1 lapisan, \textit{lr} 0.001, fitur \texttt{semua}, batch 16, dropout 0 \\
+LSTM & $W{=}6$, hidden 128, 1 lapisan, \textit{lr} 0.01, fitur \texttt{semua}, batch 16, dropout 0 \\
+GRU & $W{=}48$, hidden 128, 2 lapisan, \textit{lr} 0.001, fitur \texttt{semua}, batch 16, dropout 0 \\
+\bottomrule
+\end{tabular}
+\end{table}

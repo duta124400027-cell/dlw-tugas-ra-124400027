@@ -1,0 +1,25 @@
+\begin{table}[t]
+\centering
+\scriptsize
+\caption{Ablasi A5: kelompok fitur.}
+\label{tab:A5}
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{@{}llcccc@{}}
+\toprule
+fitur & MAE & ANN & RNN & LSTM & GRU \\
+\midrule
+\multirow{2}{*}{net} & val & 261$\pm$6 & \textbf{245$\pm$6} & 266$\pm$6 & 265$\pm$7 \\
+ & test & 272$\pm$14 & \textbf{254$\pm$2} & 285$\pm$17 & 271$\pm$11 \\
+\addlinespace[1pt]
+\multirow{2}{*}{net+call+sms} & val & 260$\pm$5 & \textbf{224$\pm$2} & 244$\pm$7 & 232$\pm$13 \\
+ & test & 316$\pm$12 & \textbf{228$\pm$2} & 263$\pm$11 & 251$\pm$9 \\
+\addlinespace[1pt]
+\multirow{2}{*}{net+waktu} & val & 249$\pm$8 & 223$\pm$10 & 231$\pm$4 & \textbf{213$\pm$18} \\
+ & test & 302$\pm$7 & 245$\pm$22 & 293$\pm$25 & \textbf{240$\pm$25} \\
+\addlinespace[1pt]
+\multirow{2}{*}{semua} & val & 249$\pm$9 & \textbf{206$\pm$7} & 230$\pm$12 & 208$\pm$4 \\
+ & test & 310$\pm$6 & \textbf{230$\pm$5} & 274$\pm$25 & 237$\pm$9 \\
+\addlinespace[1pt]
+\bottomrule
+\end{tabular}
+\end{table}

@@ -1,0 +1,53 @@
+\begin{table*}[t]
+\centering
+\scriptsize
+\caption{Ringkasan ablasi A1--A5 dan B (MAE rerata$\pm$sd, 3 seed). Tebal = model terbaik pada baris dan split tersebut.}
+\label{tab:AB}
+\setlength{\tabcolsep}{3.5pt}
+\begin{tabular}{@{}lcccccccc@{}}
+\toprule
+ & \multicolumn{4}{c}{val MAE} & \multicolumn{4}{c}{test MAE} \\
+\cmidrule(lr){2-5}\cmidrule(lr){6-9}
+Nilai & ANN & RNN & LSTM & GRU & ANN & RNN & LSTM & GRU \\
+\midrule
+\multicolumn{9}{l}{\textit{A1: $W$ (jam)}} \\
+\hspace{4pt}6 & \textbf{212$\pm$6} & 215$\pm$4 & 227$\pm$4 & 213$\pm$11 & 269$\pm$18 & \textbf{229$\pm$5} & 276$\pm$15 & 250$\pm$1 \\
+\hspace{4pt}12 & 238$\pm$4 & \textbf{207$\pm$6} & 236$\pm$2 & 209$\pm$10 & 308$\pm$13 & \textbf{233$\pm$11} & 303$\pm$17 & 246$\pm$14 \\
+\hspace{4pt}24 & 249$\pm$9 & \textbf{206$\pm$7} & 230$\pm$12 & 208$\pm$4 & 310$\pm$6 & \textbf{230$\pm$5} & 274$\pm$25 & 237$\pm$9 \\
+\hspace{4pt}48 & 262$\pm$3 & \textbf{200$\pm$5} & 249$\pm$22 & 207$\pm$5 & 333$\pm$21 & \textbf{225$\pm$12} & 304$\pm$27 & 237$\pm$11 \\
+\hspace{4pt}168 & 298$\pm$18 & \textbf{205$\pm$10} & 241$\pm$8 & 207$\pm$5 & 402$\pm$13 & \textbf{234$\pm$5} & 293$\pm$20 & 237$\pm$11 \\
+\midrule
+\multicolumn{9}{l}{\textit{A2: hidden}} \\
+\hspace{4pt}16 & 258$\pm$28 & 247$\pm$6 & 244$\pm$18 & \textbf{217$\pm$21} & 312$\pm$19 & 253$\pm$9 & 295$\pm$13 & \textbf{247$\pm$10} \\
+\hspace{4pt}32 & 249$\pm$9 & 219$\pm$7 & 241$\pm$21 & \textbf{210$\pm$1} & 310$\pm$6 & 245$\pm$4 & 291$\pm$21 & \textbf{233$\pm$5} \\
+\hspace{4pt}64 & 238$\pm$17 & 207$\pm$13 & 218$\pm$2 & \textbf{198$\pm$9} & 316$\pm$24 & 241$\pm$15 & 269$\pm$13 & \textbf{225$\pm$13} \\
+\hspace{4pt}128 & 234$\pm$1 & 208$\pm$7 & 207$\pm$8 & \textbf{189$\pm$4} & 297$\pm$32 & 235$\pm$19 & 246$\pm$7 & \textbf{220$\pm$11} \\
+\midrule
+\multicolumn{9}{l}{\textit{A3: lapisan}} \\
+\hspace{4pt}1 & 241$\pm$8 & \textbf{206$\pm$7} & 230$\pm$12 & 208$\pm$4 & 311$\pm$11 & \textbf{230$\pm$5} & 274$\pm$25 & 237$\pm$9 \\
+\hspace{4pt}2 & 249$\pm$9 & 207$\pm$9 & 255$\pm$14 & \textbf{203$\pm$10} & 310$\pm$6 & \textbf{228$\pm$8} & 309$\pm$21 & 239$\pm$6 \\
+\hspace{4pt}3 & 249$\pm$12 & 225$\pm$13 & 339$\pm$17 & \textbf{212$\pm$16} & 301$\pm$27 & \textbf{246$\pm$19} & 413$\pm$54 & 264$\pm$11 \\
+\midrule
+\multicolumn{9}{l}{\textit{A4: \textit{lr}}} \\
+\hspace{4pt}0.0001 & 295$\pm$5 & \textbf{285$\pm$14} & 399$\pm$25 & 398$\pm$9 & 340$\pm$22 & \textbf{288$\pm$7} & 373$\pm$14 & 356$\pm$8 \\
+\hspace{4pt}0.001 & 249$\pm$9 & \textbf{206$\pm$7} & 230$\pm$12 & 208$\pm$4 & 310$\pm$6 & \textbf{230$\pm$5} & 274$\pm$25 & 237$\pm$9 \\
+\hspace{4pt}0.01 & 262$\pm$17 & 223$\pm$12 & 216$\pm$14 & \textbf{208$\pm$6} & 309$\pm$53 & 241$\pm$6 & 226$\pm$4 & \textbf{216$\pm$11} \\
+\midrule
+\multicolumn{9}{l}{\textit{A5: fitur}} \\
+\hspace{4pt}net & 261$\pm$6 & \textbf{245$\pm$6} & 266$\pm$6 & 265$\pm$7 & 272$\pm$14 & \textbf{254$\pm$2} & 285$\pm$17 & 271$\pm$11 \\
+\hspace{4pt}net+call+sms & 260$\pm$5 & \textbf{224$\pm$2} & 244$\pm$7 & 232$\pm$13 & 316$\pm$12 & \textbf{228$\pm$2} & 263$\pm$11 & 251$\pm$9 \\
+\hspace{4pt}net+waktu & 249$\pm$8 & 223$\pm$10 & 231$\pm$4 & \textbf{213$\pm$18} & 302$\pm$7 & 245$\pm$22 & 293$\pm$25 & \textbf{240$\pm$25} \\
+\hspace{4pt}semua & 249$\pm$9 & \textbf{206$\pm$7} & 230$\pm$12 & 208$\pm$4 & 310$\pm$6 & \textbf{230$\pm$5} & 274$\pm$25 & 237$\pm$9 \\
+\midrule
+\multicolumn{9}{l}{\textit{B1: batch}} \\
+\hspace{4pt}16 & 245$\pm$17 & 202$\pm$9 & 209$\pm$19 & \textbf{202$\pm$4} & 308$\pm$18 & \textbf{228$\pm$7} & 249$\pm$35 & 232$\pm$10 \\
+\hspace{4pt}64 & 249$\pm$9 & \textbf{206$\pm$7} & 230$\pm$12 & 208$\pm$4 & 310$\pm$6 & \textbf{230$\pm$5} & 274$\pm$25 & 237$\pm$9 \\
+\hspace{4pt}256 & 254$\pm$13 & \textbf{228$\pm$17} & 270$\pm$11 & 234$\pm$16 & 319$\pm$29 & \textbf{259$\pm$32} & 309$\pm$4 & 264$\pm$4 \\
+\midrule
+\multicolumn{9}{l}{\textit{B2: dropout}} \\
+\hspace{4pt}0.0 & 249$\pm$9 & \textbf{206$\pm$7} & 230$\pm$12 & 208$\pm$4 & 310$\pm$6 & \textbf{230$\pm$5} & 274$\pm$25 & 237$\pm$9 \\
+\hspace{4pt}0.2 & 285$\pm$43 & 240$\pm$24 & 234$\pm$5 & \textbf{212$\pm$5} & 332$\pm$32 & 251$\pm$19 & 275$\pm$13 & \textbf{238$\pm$15} \\
+\hspace{4pt}0.5 & 353$\pm$46 & 273$\pm$16 & 259$\pm$15 & \textbf{241$\pm$11} & 368$\pm$44 & 273$\pm$18 & 300$\pm$14 & \textbf{259$\pm$16} \\
+\bottomrule
+\end{tabular}
+\end{table*}

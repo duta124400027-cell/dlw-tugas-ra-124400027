@@ -1,0 +1,19 @@
+\begin{table}[t]
+\centering
+\scriptsize
+\caption{Sensitivitas: selisih val MAE rerata terbesar--terkecil antar nilai suatu faktor (makin besar = makin berpengaruh).}
+\label{tab:sens}
+\begin{tabular}{@{}lcccc@{}}
+\toprule
+Faktor & ANN & RNN & LSTM & GRU \\
+\midrule
+A1 jendela $W$ & 86 & 15 & 22 & 6 \\
+A2 hidden & 24 & 40 & 37 & 28 \\
+A3 lapisan & 8 & 19 & 108 & 9 \\
+A4 \textit{lr} & 46 & 79 & 183 & 191 \\
+A5 fitur & 12 & 39 & 36 & 57 \\
+B1 batch & 9 & 26 & 60 & 31 \\
+B2 dropout & 104 & 67 & 29 & 33 \\
+\bottomrule
+\end{tabular}
+\end{table}

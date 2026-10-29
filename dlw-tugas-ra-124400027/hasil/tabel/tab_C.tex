@@ -1,0 +1,25 @@
+\begin{table}[t]
+\centering
+\scriptsize
+\caption{Acuan vs.\ konfigurasi terbaik (dipilih dengan val MAE) di Duomo.}
+\label{tab:C}
+\setlength{\tabcolsep}{2.5pt}
+\begin{tabular}{@{}llrcccc@{}}
+\toprule
+Model & Konf. & Param & val MAE & test MAE & Natal MAE & test MAPE (\%) \\
+\midrule
+\multirow{2}{*}{ANN} & acuan & 6497 & 249$\pm$9 & 310$\pm$6 & 680$\pm$52 & 11.3 \\
+ & terbaik & 4097 & 213$\pm$5 & 279$\pm$13 & 563$\pm$30 & 9.5 \\
+\addlinespace[1pt]
+\multirow{2}{*}{RNN} & acuan & 5305 & 206$\pm$7 & 230$\pm$5 & 421$\pm$2 & 8.5 \\
+ & terbaik & 4737 & 214$\pm$11 & 242$\pm$13 & 422$\pm$28 & 9.7 \\
+\addlinespace[1pt]
+\multirow{2}{*}{LSTM} & acuan & 5578 & 230$\pm$12 & 274$\pm$25 & 586$\pm$57 & 9.1 \\
+ & terbaik & 70273 & 241$\pm$5 & 247$\pm$13 & 463$\pm$5 & 8.5 \\
+\addlinespace[1pt]
+\multirow{2}{*}{GRU} & acuan & 5397 & 208$\pm$4 & 237$\pm$9 & 468$\pm$22 & 8.0 \\
+ & terbaik & 151809 & 227$\pm$7 & 230$\pm$8 & 442$\pm$27 & 7.5 \\
+\addlinespace[1pt]
+\bottomrule
+\end{tabular}
+\end{table}

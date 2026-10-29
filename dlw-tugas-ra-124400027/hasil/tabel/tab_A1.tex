@@ -1,0 +1,28 @@
+\begin{table}[t]
+\centering
+\scriptsize
+\caption{Ablasi A1: panjang jendela $W$. MAE rerata$\pm$sd (3 seed); tebal = model terbaik pada baris itu.}
+\label{tab:A1}
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{@{}llcccc@{}}
+\toprule
+$W$ (jam) & MAE & ANN & RNN & LSTM & GRU \\
+\midrule
+\multirow{2}{*}{6} & val & \textbf{212$\pm$6} & 215$\pm$4 & 227$\pm$4 & 213$\pm$11 \\
+ & test & 269$\pm$18 & \textbf{229$\pm$5} & 276$\pm$15 & 250$\pm$1 \\
+\addlinespace[1pt]
+\multirow{2}{*}{12} & val & 238$\pm$4 & \textbf{207$\pm$6} & 236$\pm$2 & 209$\pm$10 \\
+ & test & 308$\pm$13 & \textbf{233$\pm$11} & 303$\pm$17 & 246$\pm$14 \\
+\addlinespace[1pt]
+\multirow{2}{*}{24} & val & 249$\pm$9 & \textbf{206$\pm$7} & 230$\pm$12 & 208$\pm$4 \\
+ & test & 310$\pm$6 & \textbf{230$\pm$5} & 274$\pm$25 & 237$\pm$9 \\
+\addlinespace[1pt]
+\multirow{2}{*}{48} & val & 262$\pm$3 & \textbf{200$\pm$5} & 249$\pm$22 & 207$\pm$5 \\
+ & test & 333$\pm$21 & \textbf{225$\pm$12} & 304$\pm$27 & 237$\pm$11 \\
+\addlinespace[1pt]
+\multirow{2}{*}{168} & val & 298$\pm$18 & \textbf{205$\pm$10} & 241$\pm$8 & 207$\pm$5 \\
+ & test & 402$\pm$13 & \textbf{234$\pm$5} & 293$\pm$20 & 237$\pm$11 \\
+\addlinespace[1pt]
+\bottomrule
+\end{tabular}
+\end{table}

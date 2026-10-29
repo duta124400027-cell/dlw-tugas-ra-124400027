@@ -1,0 +1,22 @@
+\begin{table}[t]
+\centering
+\scriptsize
+\caption{Ablasi A4: \textit{learning rate}.}
+\label{tab:A4}
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{@{}llcccc@{}}
+\toprule
+\textit{lr} & MAE & ANN & RNN & LSTM & GRU \\
+\midrule
+\multirow{2}{*}{0.0001} & val & 295$\pm$5 & \textbf{285$\pm$14} & 399$\pm$25 & 398$\pm$9 \\
+ & test & 340$\pm$22 & \textbf{288$\pm$7} & 373$\pm$14 & 356$\pm$8 \\
+\addlinespace[1pt]
+\multirow{2}{*}{0.001} & val & 249$\pm$9 & \textbf{206$\pm$7} & 230$\pm$12 & 208$\pm$4 \\
+ & test & 310$\pm$6 & \textbf{230$\pm$5} & 274$\pm$25 & 237$\pm$9 \\
+\addlinespace[1pt]
+\multirow{2}{*}{0.01} & val & 262$\pm$17 & 223$\pm$12 & 216$\pm$14 & \textbf{208$\pm$6} \\
+ & test & 309$\pm$53 & 241$\pm$6 & 226$\pm$4 & \textbf{216$\pm$11} \\
+\addlinespace[1pt]
+\bottomrule
+\end{tabular}
+\end{table}

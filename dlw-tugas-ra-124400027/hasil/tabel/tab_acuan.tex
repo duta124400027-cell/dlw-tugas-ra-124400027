@@ -1,0 +1,21 @@
+\begin{table}[t]
+\centering
+\scriptsize
+\caption{Konfigurasi acuan di Duomo (rerata$\pm$sd, 3 seed).}
+\label{tab:acuan_hasil}
+\setlength{\tabcolsep}{2.5pt}
+\begin{tabular}{@{}llrcccc@{}}
+\toprule
+Model & Konf. & Param & val MAE & test MAE & Natal MAE & test MAPE (\%) \\
+\midrule
+\multirow{1}{*}{ANN} & acuan & 6497 & 249$\pm$9 & 310$\pm$6 & 680$\pm$52 & 11.3 \\
+\addlinespace[1pt]
+\multirow{1}{*}{RNN} & acuan & 5305 & 206$\pm$7 & 230$\pm$5 & 421$\pm$2 & 8.5 \\
+\addlinespace[1pt]
+\multirow{1}{*}{LSTM} & acuan & 5578 & 230$\pm$12 & 274$\pm$25 & 586$\pm$57 & 9.1 \\
+\addlinespace[1pt]
+\multirow{1}{*}{GRU} & acuan & 5397 & 208$\pm$4 & 237$\pm$9 & 468$\pm$22 & 8.0 \\
+\addlinespace[1pt]
+\bottomrule
+\end{tabular}
+\end{table}

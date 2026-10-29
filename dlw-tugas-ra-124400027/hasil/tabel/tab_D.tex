@@ -1,0 +1,25 @@
+\begin{table}[t]
+\centering
+\scriptsize
+\caption{Uji generalisasi di lokasi kelompok.}
+\label{tab:D}
+\setlength{\tabcolsep}{2.5pt}
+\begin{tabular}{@{}llrcccc@{}}
+\toprule
+Model & Konf. & Param & val MAE & test MAE & Natal MAE & test MAPE (\%) \\
+\midrule
+\multirow{2}{*}{ANN} & acuan & 6497 & 47.6$\pm$1.5 & 53.6$\pm$2.8 & 288$\pm$34 & 17.1 \\
+ & terbaik & 4097 & 57.8$\pm$4.0 & 58.7$\pm$5.9 & 195$\pm$29 & 17.8 \\
+\addlinespace[1pt]
+\multirow{2}{*}{RNN} & acuan & 5305 & 48.8$\pm$2.2 & 47.8$\pm$2.9 & 169$\pm$23 & 14.3 \\
+ & terbaik & 4737 & 47.7$\pm$2.5 & 47.1$\pm$3.0 & 144$\pm$7 & 13.7 \\
+\addlinespace[1pt]
+\multirow{2}{*}{LSTM} & acuan & 5578 & 49.3$\pm$2.1 & 52.9$\pm$2.5 & 246$\pm$71 & 14.5 \\
+ & terbaik & 70273 & 43.3$\pm$0.2 & 46.6$\pm$3.5 & 160$\pm$25 & 12.7 \\
+\addlinespace[1pt]
+\multirow{2}{*}{GRU} & acuan & 5397 & 50.5$\pm$1.2 & 50.5$\pm$3.6 & 255$\pm$60 & 14.2 \\
+ & terbaik & 151809 & 50.4$\pm$1.7 & 50.5$\pm$3.0 & 176$\pm$3 & 14.6 \\
+\addlinespace[1pt]
+\bottomrule
+\end{tabular}
+\end{table}

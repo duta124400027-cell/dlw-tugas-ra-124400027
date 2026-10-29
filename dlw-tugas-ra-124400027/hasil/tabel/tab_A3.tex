@@ -1,0 +1,22 @@
+\begin{table}[t]
+\centering
+\scriptsize
+\caption{Ablasi A3: jumlah lapisan.}
+\label{tab:A3}
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{@{}llcccc@{}}
+\toprule
+lapisan & MAE & ANN & RNN & LSTM & GRU \\
+\midrule
+\multirow{2}{*}{1} & val & 241$\pm$8 & \textbf{206$\pm$7} & 230$\pm$12 & 208$\pm$4 \\
+ & test & 311$\pm$11 & \textbf{230$\pm$5} & 274$\pm$25 & 237$\pm$9 \\
+\addlinespace[1pt]
+\multirow{2}{*}{2} & val & 249$\pm$9 & 207$\pm$9 & 255$\pm$14 & \textbf{203$\pm$10} \\
+ & test & 310$\pm$6 & \textbf{228$\pm$8} & 309$\pm$21 & 239$\pm$6 \\
+\addlinespace[1pt]
+\multirow{2}{*}{3} & val & 249$\pm$12 & 225$\pm$13 & 339$\pm$17 & \textbf{212$\pm$16} \\
+ & test & 301$\pm$27 & \textbf{246$\pm$19} & 413$\pm$54 & 264$\pm$11 \\
+\addlinespace[1pt]
+\bottomrule
+\end{tabular}
+\end{table}

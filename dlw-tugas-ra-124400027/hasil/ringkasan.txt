@@ -1,0 +1,10 @@
+348 baris, total training 19.9 menit
+Sensitivitas (rentang val MAE) [ANN RNN LSTM GRU]:
+  A1: 86 15 22 6
+  A2: 24 40 37 28
+  A3: 8 19 108 9
+  A4: 46 79 183 191
+  A5: 12 39 36 57
+  B1: 9 26 60 31
+  B2: 104 67 29 33
+Konfigurasi dengan < 3 seed: 0

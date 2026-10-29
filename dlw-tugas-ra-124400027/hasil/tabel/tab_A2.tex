@@ -1,0 +1,25 @@
+\begin{table}[t]
+\centering
+\scriptsize
+\caption{Ablasi A2: ukuran hidden.}
+\label{tab:A2}
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{@{}llcccc@{}}
+\toprule
+hidden & MAE & ANN & RNN & LSTM & GRU \\
+\midrule
+\multirow{2}{*}{16} & val & 258$\pm$28 & 247$\pm$6 & 244$\pm$18 & \textbf{217$\pm$21} \\
+ & test & 312$\pm$19 & 253$\pm$9 & 295$\pm$13 & \textbf{247$\pm$10} \\
+\addlinespace[1pt]
+\multirow{2}{*}{32} & val & 249$\pm$9 & 219$\pm$7 & 241$\pm$21 & \textbf{210$\pm$1} \\
+ & test & 310$\pm$6 & 245$\pm$4 & 291$\pm$21 & \textbf{233$\pm$5} \\
+\addlinespace[1pt]
+\multirow{2}{*}{64} & val & 238$\pm$17 & 207$\pm$13 & 218$\pm$2 & \textbf{198$\pm$9} \\
+ & test & 316$\pm$24 & 241$\pm$15 & 269$\pm$13 & \textbf{225$\pm$13} \\
+\addlinespace[1pt]
+\multirow{2}{*}{128} & val & 234$\pm$1 & 208$\pm$7 & 207$\pm$8 & \textbf{189$\pm$4} \\
+ & test & 297$\pm$32 & 235$\pm$19 & 246$\pm$7 & \textbf{220$\pm$11} \\
+\addlinespace[1pt]
+\bottomrule
+\end{tabular}
+\end{table}
